@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button-glossy {
+    position: relative;
+    overflow: hidden;
+}
+.button-glossy::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.22) 100%);
+    transform: skewX(-20deg);
+    transition: left 1s cubic-bezier(.4,0,.2,1);
+    pointer-events: none;
+}
+.button-glossy:hover::before {
+    left: 130%;
+}
+
+@keyframes custom-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-custom-spin {
+    animation: custom-spin 1.5s linear infinite;
+}
+
+.loader {
+    --r1: 154%;
+    --r2: 68.5%;
+    width: 60px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background:
+            radial-gradient(var(--r1) var(--r2) at top   ,#0000 79.5%,#D6B36A 80%), /* Fill color */
+            radial-gradient(var(--r1) var(--r2) at bottom,#D6B36A 79.5%,#0000 80%), /* Fill color */
+            radial-gradient(var(--r1) var(--r2) at top   ,#0000 79.5%,#D6B36A 80%), /* Fill color */
+            #000000; /* Base circle color */
+    background-size: 50.5% 220%;
+    background-position: -100% 0%,0% 0%,100% 0%;
+    background-repeat:no-repeat;
+    animation: l9 2s infinite linear;
+}
+
+@keyframes l9 {
+    33%  {background-position:    0% 33% ,100% 33% ,200% 33% }
+    66%  {background-position: -100%  66%,0%   66% ,100% 66% }
+    100% {background-position:    0% 100%,100% 100%,200% 100%}
+}
