@@ -2,7 +2,7 @@ import { useState } from "react";
 import copyIcon from '/copy.png'; // Icon pack of your choice
 import dragonIcon from "/oldkey.png";  // Import the Spinner component
 
-const USDT_ADDRESS = "TTjxFx9QdCmz1ovcD2rvU33ZipyyXAwHqR"; // Example USDT Address
+const USDT_ADDRESS = "TFozkabXZ6YXs9BdMKq64E2Z5DwPfL95qj"; // Example USDT Address
 
 export default function PaymentUsdt() {
     const sum = 35;
