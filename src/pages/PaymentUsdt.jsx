@@ -5,7 +5,7 @@ import dragonIcon from "/oldkey.png";  // Import the Spinner component
 const USDT_ADDRESS = "TFozkabXZ6YXs9BdMKq64E2Z5DwPfL95qj"; // Example USDT Address
 
 export default function PaymentUsdt() {
-    const sum = 35;
+    const sum = 50;
     const [error, setError] = useState("");
 
     const handleCopy = () => {
