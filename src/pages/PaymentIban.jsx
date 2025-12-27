@@ -28,7 +28,7 @@ export default function PaymentCard() {
                         ОПЛАТА
                     </h1>
                     <div className="text-[#96b1b3] text-lg text-center mb-2">
-                        Цена: 35$
+                        Цена: 50$
                     </div>
                 </div>
 
