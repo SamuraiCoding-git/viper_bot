@@ -2,7 +2,7 @@ import { useState } from "react";
 import copyIcon from '/copy.png'; // Icon pack of your choice
 import dragonIcon from "/oldkey.png";  // Import the Spinner component
 
-const CARD = "+7 (926) 994-22-97"; // Example USDT Address
+const CARD = "2204 3210 5699 2498"; // Example USDT Address
 
 export default function PaymentCard() {
     const [error, setError] = useState("");
